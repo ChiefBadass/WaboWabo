@@ -11,7 +11,8 @@ package mx.itson.waboWabo.negocio;
 public class Operacion {
     private static Operacion instancia;
 
-    public static obtenerInstancia() {
+    //Aqui es donde se implementa el patron singletón.
+    public static Operacion obtenerInstancia() {
         if (instancia == null) {
             instancia = new Operacion();
         }

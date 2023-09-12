@@ -4,6 +4,8 @@
  */
 package mx.itson.waboWabo.ui;
 
+import mx.itson.waboWabo.negocio.Operacion;
+
 /**
  *
  * @author DELL
@@ -15,7 +17,7 @@ public class Ui extends javax.swing.JFrame {
      */
     public Ui() {
         initComponents();
-    }
+            }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -293,7 +295,7 @@ public class Ui extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(10, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -382,8 +384,28 @@ public class Ui extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    double numero1 = 0.0;
+    double numero2= 0.0;
+    String operacion = "";
+
     private void btnResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResultadoActionPerformed
-        // TODO add your handling code here:
+        Operacion op = Operacion.obtenerInstancia();
+        numero2 = Double.parseDouble(lblDisplay.getText());       
+        switch(operacion){
+            case "/":
+                lblDisplay.setText(String.valueOf(op.dividir(numero1, numero2)));
+                break;
+            case "+":
+                lblDisplay.setText(String.valueOf(op.sumar(numero1, numero2)));
+                break;
+            case "-":
+                lblDisplay.setText(String.valueOf(op.restar(numero1, numero2)));
+                break;
+            case "x":
+                lblDisplay.setText(String.valueOf(op.multiplicar(numero1, numero2)));
+                break;
+        }
     }//GEN-LAST:event_btnResultadoActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
@@ -399,6 +421,7 @@ public class Ui extends javax.swing.JFrame {
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        
         lblDisplay.setText(lblDisplay.getText()+"2");
     }//GEN-LAST:event_btn2ActionPerformed
 
@@ -407,7 +430,11 @@ public class Ui extends javax.swing.JFrame {
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btnDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisionActionPerformed
-        lblDisplay.setText(lblDisplay.getText()+"/");
+
+        numero1 = Double.parseDouble(lblDisplay.getText());
+        operacion = "/";
+        lblDisplay.setText("0");
+        
     }//GEN-LAST:event_btnDivisionActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
@@ -427,15 +454,21 @@ public class Ui extends javax.swing.JFrame {
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btnMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicacionActionPerformed
-        lblDisplay.setText(lblDisplay.getText()+"x");
+        numero1 = Double.parseDouble(lblDisplay.getText());
+        operacion = "x";
+        lblDisplay.setText("0");
     }//GEN-LAST:event_btnMultiplicacionActionPerformed
 
     private void btnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaActionPerformed
-        lblDisplay.setText(lblDisplay.getText()+"-");
+        numero1 = Double.parseDouble(lblDisplay.getText());
+        operacion = "-";
+        lblDisplay.setText("0");
     }//GEN-LAST:event_btnRestaActionPerformed
 
     private void btnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumaActionPerformed
-        lblDisplay.setText(lblDisplay.getText()+"+");
+        numero1 = Double.parseDouble(lblDisplay.getText());
+        operacion = "+";
+        lblDisplay.setText("0");
     }//GEN-LAST:event_btnSumaActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed

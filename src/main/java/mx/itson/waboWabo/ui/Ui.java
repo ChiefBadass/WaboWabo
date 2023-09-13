@@ -425,7 +425,7 @@ public class Ui extends javax.swing.JFrame {
 
         numero1 = Double.parseDouble(lblDisplay.getText());
         operacion = "/";
-        lblDisplay.setText("0");
+        lblDisplay.setText("");
         
     }//GEN-LAST:event_btnDivisionActionPerformed
 
@@ -448,19 +448,19 @@ public class Ui extends javax.swing.JFrame {
     private void btnMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicacionActionPerformed
         numero1 = Double.parseDouble(lblDisplay.getText());
         operacion = "x";
-        lblDisplay.setText("0");
+        lblDisplay.setText("");
     }//GEN-LAST:event_btnMultiplicacionActionPerformed
 
     private void btnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaActionPerformed
         numero1 = Double.parseDouble(lblDisplay.getText());
         operacion = "-";
-        lblDisplay.setText("0");
+        lblDisplay.setText("");
     }//GEN-LAST:event_btnRestaActionPerformed
 
     private void btnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumaActionPerformed
         numero1 = Double.parseDouble(lblDisplay.getText());
         operacion = "+";
-        lblDisplay.setText("0");
+        lblDisplay.setText("");
     }//GEN-LAST:event_btnSumaActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed

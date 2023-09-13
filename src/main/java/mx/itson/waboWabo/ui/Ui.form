@@ -140,7 +140,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="btnDivision" min="-2" pref="48" max="-2" attributes="0"/>
-                              <EmptySpace pref="14" max="32767" attributes="0"/>
+                              <EmptySpace pref="24" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>

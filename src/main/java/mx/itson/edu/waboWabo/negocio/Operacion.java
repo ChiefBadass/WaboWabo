@@ -5,7 +5,7 @@
 package mx.itson.edu.waboWabo.negocio;
 
 /**
- * 
+ * Contiene metodos para realizar operaciones aritmeticas de una calculadora.
  * @author alumnog
  */
 public class Operacion {

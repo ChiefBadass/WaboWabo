@@ -7,7 +7,7 @@ package mx.itson.edu.waboWabo.ui;
 import mx.itson.edu.waboWabo.negocio.Operacion;
 
 /**
- * 
+ * Clase para la interfaz de usuario.
  * @author DELL
  */
 public class Main extends javax.swing.JFrame {

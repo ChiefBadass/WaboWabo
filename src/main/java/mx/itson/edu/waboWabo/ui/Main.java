@@ -7,7 +7,7 @@ package mx.itson.edu.waboWabo.ui;
 import mx.itson.edu.waboWabo.negocio.Operacion;
 
 /**
- *
+ * Contiene metodos para realizar operaciones aritmeticas de una calculadora.
  * @author DELL
  */
 public class Main extends javax.swing.JFrame {

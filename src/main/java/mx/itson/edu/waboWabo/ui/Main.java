@@ -4,10 +4,6 @@
  */
 package mx.itson.edu.waboWabo.ui;
 
-import java.awt.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import javax.swing.JOptionPane;
 import mx.itson.edu.waboWabo.negocio.Operacion;
 
 /**
@@ -21,7 +17,8 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
-            }
+        setLocationRelativeTo(null);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.

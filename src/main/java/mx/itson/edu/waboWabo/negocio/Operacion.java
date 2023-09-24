@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package mx.itson.waboWabo.negocio;
+package mx.itson.edu.waboWabo.negocio;
 
 /**
  *
@@ -33,12 +33,13 @@ public class Operacion {
     }
 
     public double dividir(double numero1, double numero2) {
-        if(numero2!=0){
-            return numero1 / numero2;
-        }else{
-            throw new ArithmeticException("No se puede dividir entre 0.");
-        }
-        
+        double r = 0.0;
+        try{         
+            r = numero1 / numero2;          
+        }catch(ArithmeticException a){
+            
+        }  
+        return r;
     }
 
 }

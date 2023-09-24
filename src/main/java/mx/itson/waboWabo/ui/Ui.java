@@ -4,6 +4,10 @@
  */
 package mx.itson.waboWabo.ui;
 
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import javax.swing.JOptionPane;
 import mx.itson.waboWabo.negocio.Operacion;
 
 /**
@@ -380,7 +384,7 @@ public class Ui extends javax.swing.JFrame {
     double numero1 = 0.0;
     double numero2= 0.0;
     String operacion = "";
-
+    
     private void btnResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResultadoActionPerformed
         Operacion op = Operacion.obtenerInstancia();
         numero2 = Double.parseDouble(lblDisplay.getText());       
@@ -422,7 +426,7 @@ public class Ui extends javax.swing.JFrame {
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btnDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisionActionPerformed
-
+      
         numero1 = Double.parseDouble(lblDisplay.getText());
         operacion = "/";
         lblDisplay.setText("");
